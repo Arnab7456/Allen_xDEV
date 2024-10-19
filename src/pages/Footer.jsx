@@ -1,11 +1,11 @@
-const about = ["About us", "Blog", "News", "MyExam EduBlogs", "Privacy policy", "Public notice", "Careers"]
-const helpAndSupport = [
+const AboutUs = ["About us", "Blog", "News", "MyExam EduBlogs", "Privacy policy", "Public notice", "Careers"]
+const help_Support = [
     "Refund policy",
     "Transfer policy",
     "Terms & Conditions",
     "Contact us"
 ];
-const popularGoals = [
+const popular_Goals = [
     "NEET UG",
     "JEE Advanced",
     "6th to 10th"
@@ -22,7 +22,7 @@ const centers = [
     "Delhi",
     "More centres"
 ];
-const examInformation = [
+const exam_Information = [
     "JEE Main",
     "JEE Advanced",
     "NEET UG",
@@ -42,7 +42,7 @@ function Footer() {
         <div className="flex flex-col gap-2">
           <div className="font-semibold">About</div>
           <div>
-            {about.map((item, index) => (
+            {AboutUs.map((item, index) => (
               <div key={index}>
                 <li className="list-none mb-2 text-[#bbc2d1]">{item}</li>
               </div>
@@ -50,11 +50,10 @@ function Footer() {
           </div>
         </div>
 
-        {/* Help & Support Section */}
         <div className="flex flex-col gap-2">
           <div className="font-semibold">Help & Support</div>
           <div>
-            {helpAndSupport.map((item, index) => (
+            {help_Support.map((item, index) => (
               <div key={index}>
                 <li className="list-none mb-2 text-[#bbc2d1]">{item}</li>
               </div>
@@ -62,11 +61,10 @@ function Footer() {
           </div>
         </div>
 
-        {/* Popular Goals Section */}
         <div className="flex flex-col gap-2">
           <div className="font-semibold">Popular Goals</div>
           <div>
-            {popularGoals.map((item, index) => (
+            {popular_Goals.map((item, index) => (
               <div key={index}>
                 <li className="list-none mb-2 text-[#bbc2d1]">{item}</li>
               </div>
@@ -74,7 +72,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Courses Section */}
         <div className="flex flex-col gap-2">
           <div className="font-semibold">Courses</div>
           <div>
@@ -86,7 +83,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Centers Section */}
+
         <div className="flex flex-col gap-2">
           <div className="font-semibold">Centers</div>
           <div>
@@ -98,11 +95,10 @@ function Footer() {
           </div>
         </div>
 
-        {/* Exam Information Section */}
         <div className="flex flex-col gap-2">
           <div className="font-semibold">Exam Information</div>
           <div>
-            {examInformation.map((item, index) => (
+            {exam_Information.map((item, index) => (
               <div key={index}>
                 <li className="list-none mb-2 text-[#bbc2d1]">{item}</li>
               </div>
@@ -110,6 +106,9 @@ function Footer() {
           </div>
         </div>
 
+      </div>
+      <div className="flex justify-start items-start m-1 p-5">
+      ALLEN Career Institute Pvt. Ltd. © All Rights Reserved.
       </div>
     </div>
   );

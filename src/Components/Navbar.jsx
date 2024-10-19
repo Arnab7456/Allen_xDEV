@@ -29,8 +29,8 @@ function Navbar() {
   }
 
   return (
-    <div className="cursor-pointer">
-      <div className="flex justify-between px-6 py-7 mt-2 items-center relative">
+    <div className=" sticky top-0 z-50 cursor-pointer shadow-md bg-slate-300 ">
+      <div className="flex justify-between px-6 py-7  items-center relative">
         {/* Logo */}
         <div>
           <img
